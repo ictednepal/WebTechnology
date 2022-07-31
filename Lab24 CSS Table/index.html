@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table properties using CSS</title>
+    <style>
+        table, th, td{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        table{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        thead{
+            background-color: blanchedalmond;
+        }
+        tfoot{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>S.N.</th>
+                <th>Particulars</th>
+                <th>Qty</th>
+                <th>Rate</th>
+                <th>Total</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Momo</td>
+                <td>5</td>
+                <td>140</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chowmin</td>
+                <td>2</td>
+                <td>150</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ice Cream</td>
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Grand Total</td>
+                <td>1400</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
